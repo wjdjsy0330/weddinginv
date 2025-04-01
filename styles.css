@@ -69,7 +69,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.2rem;
   margin: var(--spacing-section) 0;
   flex-wrap: nowrap;
 }
