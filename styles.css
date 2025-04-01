@@ -1,9 +1,9 @@
 :root {
-  --font-xxl: 1.8rem;
-  --font-xl: 1.4rem;
+  --font-xxl: 2rem;
+  --font-xl: 1.6rem;
   --font-lg: 1rem;
   --font-md: 0.9rem;
-  --font-sm: 0.75rem;
+  --font-sm: 0.8rem;
 
   --color-bg: #F9F9F9;
   --color-border: #D4D7B8;
@@ -28,15 +28,14 @@ body {
   background-color: var(--color-bg);
   font-family: var(--font-sans);
   color: var(--color-secondary);
-  padding: 2.5rem 1.5rem;
-  overflow-x: hidden;
+  padding: 3rem 2rem;
 }
 
 .wrapper {
   max-width: 37.5rem;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 1.25rem;
+  padding: 3rem 2rem;
   border: 0.75rem solid var(--color-border);
   background-color: var(--color-bg);
   text-align: center;
@@ -46,7 +45,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro {
@@ -64,17 +64,14 @@ img {
 
 .names-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
   margin: var(--spacing-section) 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .person {
-  flex: 1 1 0;
-  min-width: 8rem;
-  max-width: 12rem;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -88,6 +85,7 @@ img {
   font-size: var(--font-md);
   font-family: var(--font-sans);
   font-weight: 300;
+  margin-bottom: 0.75rem;
   text-align: left;
   width: 100%;
 }
@@ -105,13 +103,14 @@ img {
 }
 
 .name.groom {
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
 }
 
 .date-block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   width: 4rem;
 }
@@ -162,7 +161,7 @@ img {
 
 .arrow {
   width: 1rem;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
 }
 
 .map {
@@ -188,31 +187,37 @@ img {
   flex-grow: 1;
   height: 1px;
   background-color: var(--color-accent);
-  opacity: 1;
 }
 
-/* 📱 Responsive: mobile */
 @media (max-width: 480px) {
   :root {
-    --font-xxl: 1.6rem;
-    --font-xl: 1.2rem;
+    --font-xxl: 1.8rem;
+    --font-xl: 1.3rem;
     --font-lg: 0.95rem;
-    --font-md: 0.85rem;
+    --font-md: 0.8rem;
     --font-sm: 0.7rem;
     --spacing-section: 1.5rem;
   }
 
   body {
-    padding: 1.5rem 1rem;
+    padding: 2.5rem 1.25rem;
   }
 
   .wrapper {
-    padding: 1.5rem;
-    border-width: 0.5rem;
+    padding: 2rem 1rem;
   }
 
   .names-wrapper {
-    gap: 1.5rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .line-img {
+    height: 6rem;
+  }
+
+  .arrow {
+    width: 0.75rem;
   }
 
   .name {
@@ -221,14 +226,5 @@ img {
 
   .name.groom {
     letter-spacing: 0.15em;
-  }
-
-  .line-img {
-    width: 0.05rem;
-    height: 6rem;
-  }
-
-  .arrow {
-    width: 0.75rem;
   }
 }
