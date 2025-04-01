@@ -1,9 +1,9 @@
 :root {
-  --font-xxl: 2rem;
-  --font-xl: 1.6rem;
-  --font-lg: 1.0rem;
-  --font-md: 0.95rem;
-  --font-sm: 0.8rem;
+  --font-xxl: 1.8rem;
+  --font-xl: 1.4rem;
+  --font-lg: 1rem;
+  --font-md: 0.9rem;
+  --font-sm: 0.75rem;
 
   --color-bg: #F9F9F9;
   --color-border: #D4D7B8;
@@ -14,7 +14,7 @@
   --font-serif: 'NanumMyeongjo', serif;
   --font-sans: 'NotoSansKR', sans-serif;
 
-  --spacing-section: 3rem;
+  --spacing-section: 2.5rem;
   --spacing-gap: 1rem;
 }
 
@@ -28,26 +28,25 @@ body {
   background-color: var(--color-bg);
   font-family: var(--font-sans);
   color: var(--color-secondary);
-  padding: 2.5rem;
+  padding: 2.5rem 1.5rem;
+  overflow-x: hidden;
 }
 
 .wrapper {
   max-width: 37.5rem;
   width: 100%;
   margin: 0 auto;
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.25rem;
   border: 0.75rem solid var(--color-border);
   background-color: var(--color-bg);
   text-align: center;
-  box-sizing: border-box;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .intro {
@@ -59,7 +58,7 @@ img {
 
 .line-img {
   width: 0.05rem;
-  height: 8rem;
+  height: 7rem;
   margin: 1rem auto;
 }
 
@@ -87,8 +86,8 @@ img {
 
 .label {
   font-size: var(--font-md);
-  font-family: var(--font-serif);
-  margin-bottom: 0.5rem;
+  font-family: var(--font-sans);
+  font-weight: 300;
   text-align: left;
   width: 100%;
 }
@@ -151,10 +150,6 @@ img {
   margin-bottom: 0.25rem;
 }
 
-.desc.sub {
-  font-weight: 300;
-}
-
 .section {
   margin: var(--spacing-section) 0;
 }
@@ -174,30 +169,46 @@ img {
   margin-top: 0.5rem;
 }
 
-.account {
+.account-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0.75rem 0;
   font-size: var(--font-md);
   font-weight: 300;
-  line-height: 1.4;
-  margin-top: 1rem;
 }
 
+.account-line .label,
+.account-line .info {
+  white-space: nowrap;
+}
+
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--color-accent);
+  opacity: 1;
+}
+
+/* 📱 Responsive: mobile */
 @media (max-width: 480px) {
   :root {
-    --font-xxl: 2rem;
-    --font-xl: 1.4rem;
-    --font-lg: 1rem;
-    --font-md: 0.875rem;
-    --font-sm: 0.75rem;
+    --font-xxl: 1.6rem;
+    --font-xl: 1.2rem;
+    --font-lg: 0.95rem;
+    --font-md: 0.85rem;
+    --font-sm: 0.7rem;
     --spacing-section: 1.5rem;
   }
 
   body {
-    padding: 2rem;
+    padding: 1.5rem 1rem;
   }
 
   .wrapper {
-    padding: 2rem;
-    border-width: 0.625rem;
+    padding: 1.5rem;
+    border-width: 0.5rem;
   }
 
   .names-wrapper {
@@ -214,6 +225,7 @@ img {
 
   .line-img {
     width: 0.05rem;
+    height: 6rem;
   }
 
   .arrow {
