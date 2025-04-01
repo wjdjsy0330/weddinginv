@@ -1,9 +1,9 @@
 :root {
-  --font-xxl: 1.8rem; /* 이름 크기 줄임 */
-  --font-xl: 1.5rem;
-  --font-lg: 1rem;
-  --font-md: 0.9rem;
-  --font-sm: 0.8rem;
+  --font-xxl: 1.8rem;
+  --font-xl: 1.3rem;
+  --font-lg: 0.95rem;
+  --font-md: 0.85rem;
+  --font-sm: 0.75rem;
 
   --color-bg: #F9F9F9;
   --color-border: #D4D7B8;
@@ -14,7 +14,7 @@
   --font-serif: 'NanumMyeongjo', serif;
   --font-sans: 'NotoSansKR', sans-serif;
 
-  --spacing-section: 2.5rem;
+  --spacing-section: 2rem;
   --spacing-gap: 1rem;
 }
 
@@ -28,14 +28,14 @@ body {
   background-color: var(--color-bg);
   font-family: var(--font-sans);
   color: var(--color-secondary);
-  padding: 2rem; /* 바깥 여백 */
+  padding: 3rem 2rem;
 }
 
 .wrapper {
   max-width: 37.5rem;
   width: 100%;
   margin: 0 auto;
-  padding: 3rem 2rem; /* 안쪽 여백 증가 */
+  padding: 3rem 2rem;
   border: 0.75rem solid var(--color-border);
   background-color: var(--color-bg);
   text-align: center;
@@ -57,12 +57,9 @@ img {
 }
 
 .line-img {
-  width: 0.08rem;
-  height: 8rem;
+  width: 0.05rem;
+  height: 6rem;
   margin: 1rem auto;
-  background-color: var(--color-accent);
-  content: "";
-  display: block;
 }
 
 .names-wrapper {
@@ -89,7 +86,7 @@ img {
   font-size: var(--font-md);
   font-family: var(--font-sans);
   font-weight: 300;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   text-align: left;
   width: 100%;
 }
@@ -102,12 +99,12 @@ img {
   font-size: var(--font-xxl);
   font-family: var(--font-serif);
   color: var(--color-primary);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   text-shadow: 0 0 1px rgba(84, 69, 47, 0.16);
 }
 
 .name.groom {
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
 }
 
 .date-block {
@@ -124,7 +121,7 @@ img {
   font-size: var(--font-xl);
   font-family: var(--font-serif);
   color: var(--color-accent);
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   text-shadow: 0 0 1px rgba(84, 69, 47, 0.16);
 }
 
@@ -177,7 +174,7 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin: 0.75rem 0;
+  margin: 1rem 0;
   font-size: var(--font-md);
   font-weight: 300;
 }
@@ -187,10 +184,11 @@ img {
   white-space: nowrap;
 }
 
-.divider-line {
+.dash {
+  height: 1px;
   flex-grow: 1;
-  height: 2px;
   background-color: var(--color-accent);
+  display: block;
 }
 
 @media (max-width: 480px) {
@@ -198,9 +196,9 @@ img {
     --font-xxl: 1.6rem;
     --font-xl: 1.2rem;
     --font-lg: 0.9rem;
-    --font-md: 0.8rem;
+    --font-md: 0.75rem;
     --font-sm: 0.7rem;
-    --spacing-section: 1.5rem;
+    --spacing-section: 1.25rem;
   }
 
   body {
@@ -211,12 +209,8 @@ img {
     padding: 2rem 1rem;
   }
 
-  .names-wrapper {
-    gap: 0.5rem;
-  }
-
   .line-img {
-    height: 6rem;
+    height: 5rem;
   }
 
   .arrow {
@@ -224,10 +218,10 @@ img {
   }
 
   .name {
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
   }
 
   .name.groom {
-    letter-spacing: 0.15em;
+    letter-spacing: 0.08em;
   }
 }
