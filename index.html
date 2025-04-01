@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>모바일 청첩장</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    @font-face {
+      font-family: 'NanumMyeongjo';
+      src: url('./assets/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'NotoSansKR';
+      src: url('./assets/Noto_Sans_KR/NotoSansKR-Regular.otf') format('opentype');
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <p class="intro">
+      해가 길어지는 저녁,<br />
+      저희의 시작을 함께해 주세요
+    </p>
+
+    <img src="./assets/top_line.svg" alt="top-line" class="line-img" />
+
+    <section class="names-wrapper">
+      <div class="person groom">
+        <div class="label">신랑</div>
+        <div class="name groom">김준</div>
+      </div>
+      <div class="date-block">
+        <div class="month">05</div>
+        <div class="divider"></div>
+        <div class="day">31</div>
+      </div>
+      <div class="person bride">
+        <div class="label">신부</div>
+        <div class="name">정성윤</div>
+      </div>
+    </section>
+
+    <img src="./assets/bottom_line.svg" alt="bottom-line" class="line-img" />
+
+    <section class="event-info">
+      <div class="date-title">2025.05.31</div>
+      <div class="desc">오후 5시, 오가헌</div>
+      <div class="desc sub">광주광역시 동구 금남로4가 42</div>
+    </section>
+
+    <section class="section">
+      <p class="section-title">오가헌 찾아오시는 길</p>
+      <img src="./assets/down_arrow.svg" alt="arrow" class="arrow" />
+      <img src="./assets/map.svg" alt="map" class="map" />
+    </section>
+
+    <section class="section">
+      <p class="section-title">드레스 코드 · 가든 캐주얼</p>
+      <p class="desc">
+        가볍고 편한 옷차림으로,<br />
+        천천히 걷고 오래 머물다 가세요.
+      </p>
+    </section>
+
+    <section class="section">
+      <p class="section-title">축하의 마음을 보내주세요</p>
+      <img src="./assets/down_arrow.svg" alt="arrow" class="arrow" />
+      <div class="account">
+        <p><strong>신부측</strong> 국민 정성윤 774202-01-182819</p>
+        <p><strong>신랑측</strong> 농협 김준 000000-00-000000</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
