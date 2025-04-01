@@ -125,7 +125,7 @@ img {
 }
 
 .divider {
-  width: 50%;
+  width: 60%;
   height: 2px;
   background-color: var(--color-accent);
 }
