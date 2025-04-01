@@ -185,7 +185,7 @@ img {
 
 .divider-line {
   flex-grow: 1;
-  height: 1px;
+  height: 2px;
   background-color: var(--color-accent);
 }
 
