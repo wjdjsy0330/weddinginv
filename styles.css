@@ -57,8 +57,8 @@ img {
 }
 
 .line-img {
-  width: 0.05rem;
-  height: 7rem;
+  width: 0.08rem;
+  height: 8rem;
   margin: 1rem auto;
   background-color: var(--color-accent);
   content: "";
